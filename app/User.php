@@ -38,5 +38,9 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
+    public function transaction(){
+        return $this->hasOne(Transaction::class);
+    }
+
     
 }
